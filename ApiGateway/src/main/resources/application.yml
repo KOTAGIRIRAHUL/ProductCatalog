@@ -1,0 +1,28 @@
+server:
+  port: 7007
+
+ 
+
+zuul:
+  #Service will be mapped under the /api URI
+  prefix: /api
+  routes:
+    product catalog:
+      path: /**
+      url: http://localhost:7001
+
+      
+      
+spring:
+  application:
+    name: ApiGateway   
+    
+       
+    
+ 
+
+ 
+
+ 
+
+ 
